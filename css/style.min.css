@@ -895,7 +895,14 @@ main {
 }
 
 .webp .cover {
-    background-image: url(/img/jupiter.webp)
+    background-image: url(/img/jupiter.webp);
+    background-image: url(./img/jupiter.webp);
+    background-image: url(../img/jupiter.webp)
+    background-image: url(img/jupiter.webp);
+    background-image: url(/img/jupiter.jpg);
+    background-image: url(./img/jupiter.jpg);
+    background-image: url(../img/jupiter.jpg)
+    
 }
 
 .webp .inspire {
