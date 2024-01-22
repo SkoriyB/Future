@@ -818,10 +818,8 @@ main {
 
 @media (max-width:710px) {
     .inspire {
-        min-height: 800px;
-       
-        background: center/cover no-repeat url(../img/STRONK.jpg);
-        
+        min-height: 800px;       
+        background: center/cover no-repeat url(../img/STRONK.jpg);        
     }
 
     .inspire__container {
