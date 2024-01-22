@@ -819,7 +819,7 @@ main {
 @media (max-width:710px) {
     .inspire {
         min-height: 800px;
-        background: center/cover no-repeat url(https://skoriyb.github.io/Future/img/STRONK.webp);
+       
         background: center/cover no-repeat url(../img/STRONK.jpg);
         
     }
