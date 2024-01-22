@@ -296,14 +296,14 @@ body.ie ._ibg img {
 
 .cover__sub-title {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center
 }
 
 .cover__arrow {
     align-self: center;
     padding: 5px;
-    font-size: 10px
+    font-size: 5px
 }
 
 .nav-bar {
@@ -673,14 +673,17 @@ main {
 .plate {
     display: flex;
     padding: 0 15px;
-    min-height: 74%;
     justify-content: space-evenly
 }
 
 .plate__img {
     flex: 1 1 10%;
-    padding: 8% 12% 12% 12%;
-    margin: 0 auto
+    margin: 0 auto;
+    position: relative
+}
+
+.plate__img img {
+    display: inline-block
 }
 
 .plate__container {
@@ -705,16 +708,16 @@ main {
 .plate__text {
     font-size: 20px;
     padding: 5px 0;
-    flex: 1 1 5%
+    flex: 1 1 50%
 }
 
 .inspire {
     min-height: 1000px;
-    background: center/cover no-repeat url(../img/unity2.jpg)
+    background: center/cover no-repeat url(../img/unity2.jpg);
+    display: flex
 }
 
 .inspire__container {
-    min-height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -785,7 +788,8 @@ main {
     flex-direction: column
 }
 
-.contact__column-blog {
+.contact__column-blog,
+.contact__column-faq {
     display: flex;
     flex-direction: column
 }
@@ -813,6 +817,42 @@ main {
 }
 
 @media (max-width:710px) {
+    .inspire {
+        min-height: 800px;
+        background: center/cover no-repeat url(../img/STRONK.jpg)
+    }
+
+    .inspire__container {
+        min-height: 300px
+    }
+
+    .cover {
+        height: 800px
+    }
+
+    .story__upper {
+        padding-bottom: 5px
+    }
+
+    .story__dash-block,
+    .story__title {
+        padding: 15px 0
+    }
+
+    .story__content>* {
+        padding: 10px 10px
+    }
+
+    .story__content {
+        margin: 0 -10px
+    }
+
+    .story__text {
+        font-size: 15px;
+        line-height: 19px;
+        text-align: justify
+    }
+
     .sign__container {
         min-height: 60px
     }
@@ -830,25 +870,28 @@ main {
         flex: 1 1 20%
     }
 
-    .inspire {
-        min-height: 0
-    }
-
     .inspire__container {
         min-height: 300px
     }
 
+    .story__content {
+        flex-direction: column
+    }
+
     .story__images {
-        flex-direction: column;
-        column-gap: 10px
+        flex-direction: row;
+        gap: 10px;
+        order: 1
     }
 
     .story__image {
-        flex: 0 1 30%
+        flex: 0 1 32%;
+        padding: 50% 0 0 0
     }
 
     .story__text {
-        font-size: 10px
+        order: 2;
+        font-size: 20px
     }
 
     .capabilities__plates {
@@ -871,10 +914,6 @@ main {
 
     .plate__container {
         padding: 0 5px
-    }
-
-    .plate__img img {
-        max-height: 50px
     }
 
     .plate__title {
@@ -910,5 +949,113 @@ main {
 
     .sign__title {
         font-size: 14px
+    }
+
+    .plate__picture {
+        max-height: 80px
+    }
+}
+
+@media (max-width:430px) {
+    .story {
+        padding: 0 30px
+    }
+
+    .story__text-dynamic {
+        color: #fff;
+        text-shadow: 1px 1px #171819
+    }
+
+    .story__image:last-child {
+        flex: 0 1 100%
+    }
+
+    .story__images {
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px
+    }
+
+    .story__image {
+        flex: 0 1 48%
+    }
+
+    .story__images:last-child {
+        flex: 0 1 100%
+    }
+
+    .capabilities {
+        padding: 0 30px
+    }
+
+    .capabilities__container {
+        padding: 10px 0
+    }
+
+    .capabilities__plates {
+        flex-direction: column;
+        row-gap: 5px
+    }
+
+    .capabilities__plate {
+        flex: 1 1 30%
+    }
+
+    .plate {
+        min-height: unset
+    }
+
+    .plate__img img {
+        max-height: 50px
+    }
+
+    .plate__title {
+        font-size: 20px;
+        line-height: 20px
+    }
+
+    .plate__text {
+        font-size: 16px;
+        line-height: 16px
+    }
+
+    .inspire {
+        height: 800px
+    }
+
+    .inspire__container {
+        min-height: 100%
+    }
+
+    .sign__title {
+        font-size: 20px
+    }
+
+    .contact {
+        min-height: 500px
+    }
+
+    .contact__title {
+        text-align: center
+    }
+
+    .contact__container {
+        flex-direction: column
+    }
+
+    .contact__container>* {
+        font-size: 20px;
+        line-height: 20px
+    }
+
+    .contact__company {
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        flex-direction: column
+    }
+
+    .contact__links {
+        justify-content: space-between
     }
 }
