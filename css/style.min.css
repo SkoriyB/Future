@@ -899,6 +899,7 @@ main {
     }
 
     .capabilities__text {
+        display:none;
         font-size: 0;
         line-height: 15px;
         flex: 1 1 30%
